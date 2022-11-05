@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/calculadora.jpg" alt="">
+        </div>
+        <div class="form">
+            <form>
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Calculadora de Médias</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Digite seu nome: </label>
+                        <input id="primnome" type="text" name="primnome" placeholder="Digite seu nome:">    
+                    </div>
+                    <div class="input-box">
+                        <label for="firstname">Digite seu Sobrenome: </label>
+                        <input id="ultnome" type="text" name="ultnome" placeholder="Último nome:" >    
+                    </div>
+                    <div class="input-box">
+                        <label>Bimestre 1:</label>
+                        <input class="input-box" id="bim1" type='number' placeholder="Digite a nota do 1º Bimestre">
+                    </div>
+                    <div class="input-box">
+                        <label>Bimestre 2:</label>
+                        <input class="input-box" id="bim2" type='number' placeholder="Digite a nota do 2º Bimestre">
+                    </div>
+                    <div class="input-box">
+                        <label>Bimestre 3:</label>
+                        <input class="input-box" id="bim3" type='number' placeholder="Digite a nota do 3º Bimestre">
+                    </div>
+                    <div class="input-box">
+                        <label>Bimestre 4:</label>
+                        <input class="input-box" id="bim4" type='number' placeholder="Digite a nota do 4º Bimestre">
+                    </div>
+                </div>
+                
+                <p style="font-size: 40px;" id="labelnome"></p>
+                <p style="font-size: 20px;">Médias</p>
+                <p id="label1"></p>
+                <p style="font-size: 20px;">Situação:</p>
+                <p id="label2"></p>
+                <p id="label3"></p>
+                
+                <div class="botao">
+                  <a onclick=calculo()>Calcular</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
